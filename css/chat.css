@@ -69,7 +69,7 @@ header{
     overflow-y: auto;
 }
 .message {
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     color: var(--branco);
 }
 .message p {
@@ -106,4 +106,53 @@ header{
     font-family: var(--titulo);
     font-weight: 800;
     font-size: 22px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    cursor: pointer;
 } 
+.chat-footer button:hover{
+    transform: translateY(-0.125em);
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.user-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-color: var(--branco);
+}
+.user-info strong{
+    font-size: 24px;
+    font-family: var(--titulo);
+}
+.message-area{
+    display: flex;
+    justify-content: baseline;
+    padding-top: 28px;
+    padding-left: 114px;
+}
+.message-content{
+    background-color: var(--branco);
+    display: flex;
+    width: 90em;
+    height: auto;
+    border: 1px solid var(--black);
+    padding: 20px;
+}
+p{
+    color: var(--preto);
+}
+
+.gestao{
+    background-image: url('../img/raposa_logo.png');
+}
+
+.responsavel{
+    background-image: url(https://i.pinimg.com/564x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg);
+    background-size: cover;
+}
