@@ -1,0 +1,46 @@
+body {
+    background-image: url('../img/login_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--texto);
+}
+.header {
+    padding-top: 23px;
+    padding-inline: 35px;
+    display: flex;
+    justify-content: end;
+}
+.input-area {
+    display: grid;
+    gap: 75px;
+}
+.logo {
+    display: flex;
+    justify-content: end;
+}
+.content {
+    display: grid;
+    gap: 32px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input h2 {
+    color: var(--branco);
+    font-size: 25px;
+}
+.input input.form-control {
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    border-radius: 15px;
+    color: var(--branco);
+    padding-inline: 17px;
+    outline: 0;
+    height: 65px;
+}
+.input input.form-control::placeholder {
+    color: var(--branco);
+}

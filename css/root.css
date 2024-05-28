@@ -1,0 +1,13 @@
+:root{
+    --branco: #FFFFFF;
+    --cinza: #EBEBEB;
+    --azul-claro: #11437E;
+    --azul-escuro: #000C2C;
+    --azul: #1C3372;
+    --laranja-escuro: #FF712F;
+    --laranja: #FF8600;
+    --laranja-claro: #FF9E00;
+    --preto: #000000;
+    --titulo: "Nunito", sans-serif;
+    --texto:  "Inter", sans-serif;
+}

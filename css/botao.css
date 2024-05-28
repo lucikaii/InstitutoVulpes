@@ -1,0 +1,22 @@
+.btn {
+    width: 263px;
+    height: 61px;
+    background-color: transparent;
+    border: 4px solid var(--laranja-escuro);
+    border-radius: 20px;
+    color: var(--laranja-escuro);
+    font-family: var(--titulo);
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button-area {
+    display: flex;
+    justify-content: end;
+}
+.btn:hover {
+    background-color: var(--laranja-escuro);
+    color: var(--branco);
+    transform: translateY(-0.125em);
+}

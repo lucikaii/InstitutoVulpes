@@ -1,0 +1,39 @@
+.navbar{
+    color: var(--preto);
+    font-family: var(--texto);
+    font-weight: 700 ;
+    display: flex;
+    gap: 59px;
+    align-items: center;
+    padding-top: 20px;
+}
+ul.navbar > a{
+    color: var(--preto);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+ul.navbar > a:hover{
+    transition: 0.4s all ease;
+    color: var(--laranja);
+    font-weight: 800;
+}
+ul.navbar > a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -1px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    background-color: var(--laranja);
+}
+ul.navbar > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
