@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+header{
+    height: 100px;
+    background-color: var(--azul-claro);
+    display: flex;
+}
+.icon-welcome-message{
+    display: flex;
+}
+.icon-welcome-message img{
+    height: 50px;
+    width: 50px;
+}
+.message{
+    display: grid;
+}
+h1{
+    font-size: 14px;
+    font-family: var(--texto);
+    font-weight: 600;
+    color: var(--branco);
+}
+span{
+    font-size: 16px;
+    font-family: var(--titulo);
+    font-weight: 600;
+    color: var(--laranja);
+}
+.button-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+
+main{
+    height: 100%;
+}
+nav{
+    height: 100%;
+    width: 20%;
+    border-right: 2px solid var(--azul-escuro);
+}
+input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--azul-escuro);
+    outline: 0;
+}
+.user-message{
+    height: 60px;
+    width: 100%;
+    background-color: burlywood;
+    border-bottom: 2px solid black;
+}
