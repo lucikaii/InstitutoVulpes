@@ -2,6 +2,7 @@ body {
     font-family: var(--texto);
     padding-inline: 57px;
 }
+
 .container{
     display: flex;
     flex-direction: column;

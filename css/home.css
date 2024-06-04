@@ -1,8 +1,12 @@
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--titulo);
     font-weight: 700;
-    background-color: #1C3372;
+    background-color: var(--branco);
     color: #fff;
+}
+
+.custom-bg {
+    background-color: var(--azul);
 }
 
 .navbar-brand {
@@ -35,11 +39,10 @@ body {
 
 .image-background {
     position: relative;
-    background-image: url('./img/Group\ 6.png'); 
+    background-image: url('../img/home_bg.png'); 
     background-size: cover;
     background-position: center;
     padding: 20px;
-    border-radius: 10px;
     height: 500px; 
 }
 

@@ -14,40 +14,28 @@
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <script type="module" src="../js/home.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./img/raposa 3.png" alt="Logo" height="30">
-                Instituto <span>Vulpes</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-users"></i> Comunicados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chalkboard-teacher"></i> Boletim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user"></i> Perfil</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-warning ml-3">Contate-nos</button>
-                    </li>
-                </ul>
+    <header>
+        <div class="logo-area">
+            <img src="../img/raposa_logo.png" alt="raposa_logo">
+            <div class="logo-nome">
+                <h2>Instituto</h2>
+                <h1>Vulpes</h1>
             </div>
         </div>
-    </nav>
-
-    <div class="container mt-4">
+        <div class="content-area">
+            <ul class="navbar">
+                <a href="#" >Home</a>
+                <a href="#" >Comunicados</a>
+                <a href="./boletim.html" >Boletim</a>
+                <a href="#" >Perfil</a>
+            </ul>
+            <a href="./chat.html"><button class="botao">Contate-nos</button></a>
+        </div>
+    </header>
+    <div class="container mt-4 custom-bg">
         <div class="image-background">
             <div class="overlay-text text-center">
                 <h1>Bem-vindos à nossa escola</h1>
