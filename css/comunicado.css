@@ -1,0 +1,57 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    margin-right: 10px;
+}
+.navbar-brand span {
+    color: #FFA500;
+}
+.btn-warning {
+    border-radius: 20px;
+}
+.student-info {
+    background-color: #1C3372;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.student-info img {
+    border-radius: 50%;
+}
+.student-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.student-details h4,
+.student-details p {
+    margin: 0 10px 10px 0;
+}
+.date {
+    color: #FFA500;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.comunicado {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #1C3372;
+    padding: 20px;
+    margin-top: 10px;
+}
+.comunicado-title {
+    color: #1C3372;
+}
+.comunicado-body {
+    color: #000;
+}
+.contact-text {
+    color: #FFA500;
+    margin-top: 10px;
+}

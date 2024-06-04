@@ -4,56 +4,6 @@ body{
     display: grid;
     overflow: hidden;
 }
-header{
-    background-color: var(--branco);
-    padding-inline: 23px;
-    height: 98px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo-area{
-    display: flex;
-    align-items: center;
-}
-.logo-nome{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.logo-nome h1{
-    color: var(--laranja);
-    font-family: var(--titulo);
-    font-weight: 900;
-    font-size: 24px;
-    padding-left: 28px;
-}
-.logo-nome h2{
-    color: var(--preto);
-    font-size: 20px;
-    font-weight: 700;
-}
-.content-area{
-    display: flex;
-    gap: 70px;
-    align-items: center;
-}
-.botao{
-    width: 200px;
-    height: 56px;
-    background-color: var(--laranja);
-    color: var(--branco);
-    font-family: var(--titulo);
-    font-weight: 800;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all 0.2s ease-in-out;
-}
-.botao:hover{
-    transform: translateY(-2px);
-}
 .chat-container {
     height: 92vh;
     display: flex;

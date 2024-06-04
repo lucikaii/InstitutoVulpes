@@ -1,0 +1,56 @@
+body {
+    font-family: var(--texto);
+    padding-inline: 57px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.student-info {
+    background-color: #1C3372;
+    color: white;
+    padding: 20px;
+    width: 120em;
+}
+.student-info img {
+    border-radius: 50%;
+}
+.student-details {
+    display: flex;
+    flex-direction: column;
+}
+.student-details h4,
+.student-details p {
+    margin: 5px 0;
+}
+@media (min-width: 768px) {
+    .student-details {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .student-details h4,
+    .student-details p {
+        margin: 0 10px 0 0;
+    }
+}
+.boletim-table {
+    margin-top: 20px;
+}
+.boletim-table th, .boletim-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.boletim-table th {
+    background-color: #f8f9fa;
+    color: black;
+    font-size: 1.2em;
+    padding: 20px;
+}
+.boletim-table td {
+    padding: 15px;
+}
+.table-responsive {
+    overflow-x: auto;
+}
