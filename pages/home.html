@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Vulpes | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2477/2477621.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/raposa 3.png" alt="Logo" height="30">
+                Instituto <span>Vulpes</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-users"></i> Comunicados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-chalkboard-teacher"></i> Boletim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-warning ml-3">Contate-nos</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="image-background">
+            <div class="overlay-text text-center">
+                <h1>Bem-vindos à nossa escola</h1>
+                <p>Descubra um mundo de conhecimento, amizade e diversão na nossa escola.</p>
+                <p>Venha fazer parte da nossa família escolar e descobrir um mundo de possibilidades!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <p class="quadro text-center">Quadro de Avisos</p>
+        <div class="comunicado">
+            <div class="comunicado-body">
+                <h5 class="comunicado-title">Passeio para o Aquário de São Paulo!</h5>
+                <p>É com grande entusiasmo que informamos sobre o próximo passeio escolar de nossos alunos ao Aquário de São Paulo! Este passeio promete ser uma experiência educativa e emocionante para nossos estudantes, proporcionando-lhes a oportunidade de explorar e aprender sobre a vida marinha de forma interativa e divertida.</p>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="visto-checkbox" onchange="toggleCheckbox(this)">
+                <label for="visto-checkbox">Não Visto</label>
+            </div>
+            <div class="date-box">
+                05/06/2024
+            </div>
+        </div>
+    </div>
+</body>
+</html>

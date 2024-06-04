@@ -36,15 +36,15 @@ body {
     }
 }
 .boletim-table {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 .boletim-table th, .boletim-table td {
     text-align: center;
     vertical-align: middle;
 }
 .boletim-table th {
-    background-color: #f8f9fa;
-    color: black;
+    background-color: var(--branco);
+    color: var(--azul-escuro);
     font-size: 1.2em;
     padding: 20px;
 }
@@ -53,4 +53,21 @@ body {
 }
 .table-responsive {
     overflow-x: auto;
+}
+
+td {
+    font-family: var(--titulo);
+    font-weight: 900;
+    color: var(--azul-escuro);
+    font-size: 20px;
+}
+table{
+    width: 1300px;
+}
+.vermelho{
+    color: var(--vermelho);
+}
+
+.verde{
+    color: green;
 }

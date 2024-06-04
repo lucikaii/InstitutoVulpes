@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../css/root.css">
   <link rel="stylesheet" href="../css/boletim.css">
   <link rel="stylesheet" href="../css/navbar.css">
+  <script type="module" src="../js/boletim.js" defer></script>
+  <script type="module" src="../js/url/disciplina.js" defer></script>
 </head>
 <body>
   <header>
@@ -29,7 +31,7 @@
         <ul class="navbar">
             <a href="#" >Home</a>
             <a href="#" >Comunicados</a>
-            <a href="#" >Boletim</a>
+            <a href="./boletim.html" >Boletim</a>
             <a href="#" >Perfil</a>
         </ul>
         <a href="./chat.html"><button class="botao">Contate-nos</button></a>
@@ -62,26 +64,7 @@
                         <th>Resultado Final</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Matemática</td>
-                        <td>8.5</td>
-                        <td>2</td>
-                        <td>Aprovado</td>
-                    </tr>
-                    <tr>
-                        <td>Português</td>
-                        <td>7.0</td>
-                        <td>1</td>
-                        <td>Aprovado</td>
-                    </tr>
-                    <tr>
-                        <td>Biologia</td>
-                        <td>6.0</td>
-                        <td>0</td>
-                        <td>Aprovado</td>
-                    </tr>
-                </tbody>
+                <tbody id="container-boletim"></tbody>
             </table>
         </div>
     </div>
