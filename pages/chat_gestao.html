@@ -18,9 +18,9 @@
     <header>
         <div class="icon-welcome-message">
             <img src="../img/raposa_logo.png" alt="logo">
-            <div class="message">
+            <div class="message-welcome">
                 <h1>Boas Vindas!</h1>
-                <span>Luana Magalhães</span>
+                <span class="user-name">Luana Magalhães</span>
             </div>
         </div>
         <div class="button-side">
@@ -33,13 +33,36 @@
     </header>
     <main>
         <nav>
-            <input type="text">
+            <input type="text" placeholder="Pesquisar por um nome..." class="search-user">
             <div class="user-message"></div>
             <div class="user-message"></div>
             <div class="user-message"></div>
             <div class="user-message"></div>
         </nav>
-        <div></div>
+        <div class="chat-side">
+            <div class="user-info"></div>
+            <div class="chat">
+                <div class="message-self">
+                    <span>Hello World!</span>
+                </div>
+                <div class="message-other">
+                    <span>Hello Mars!</span>
+                </div>
+                <div class="message-other">
+                    <span>Its a pleasure to receive you at this house</span>
+                </div>
+                <div class="message-self">
+                    <span>I have a doubt, you teachers were talking about the registration of fake students at this school? But how did it happened?</span>
+                </div>
+                <div class="message-other">
+                    <span>No, it was just a joke between us, dont worry, no fake student here 😉</span>
+                </div>
+            </div>
+            <div class="keyboard">
+                <input type="text" class="message" placeholder="Escreva uma mensagem...">
+                <button class="send-button">Enviar</button>
+            </div>
+        </div>
     </main>
 </body>
 </html>
