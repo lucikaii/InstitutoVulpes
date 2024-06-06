@@ -97,6 +97,7 @@ span{
 }
 .row{
     display: flex;
+    gap: 10px;
 }
 .row span:first-child{
     font-size: 20px;
