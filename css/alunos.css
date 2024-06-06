@@ -1,0 +1,112 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: var(--azul-claro);
+    display: flex;
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-area img{
+    height: 50px;
+    width: 50px;
+}
+.message-welcome{
+    display: grid;
+}
+.message-welcome > span:first-child{
+    font-size: 12px;
+    font-family: var(--texto);
+    font-weight: 600;
+    color: var(--branco);
+}
+.message-welcome > span:last-child{
+    font-size: 16px;
+    font-family: var(--titulo);
+    font-weight: 900;
+    color: var(--laranja);
+}
+.button-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    padding: 175px 30px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.student-box{
+    height: 110px;
+    width: 45%;
+    border-radius: 8px;
+    background-color: var(--azul-claro);
+    padding: 10px 20px 10px 20px;
+    display: flex;
+}
+.student-box img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    align-self: center;
+}
+.left-column{
+    height: 100%;
+    padding: 0 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--branco);
+}
+span{
+    align-self: center;
+}
+.left-column span:first-child{
+    font-size: 20px;
+    font-family: var(--titulo);
+    font-weight: 700;
+}
+.left-column span:last-child{
+    font-size: 16px;
+    font-family: var(--texto);
+}
+.right-column{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end
+}
+.row{
+    display: flex;
+}
+.row span:first-child{
+    font-size: 20px;
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-weight: 700;
+}
+.row span:last-child{
+    font-size: 20px;
+    color: var(--laranja);
+    font-family: var(--titulo);
+    font-weight: 700
+}

@@ -43,3 +43,14 @@
     border-radius: 8px;
     color: var(--branco);
 }
+.new-class-button{
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    color: var(--azul-claro);
+    border: 0;
+    background-color: var(--branco);
+    border-radius: 8px;
+    font-family: var(--titulo);
+    font-weight: 700;
+    font-size: 20px;
+}
