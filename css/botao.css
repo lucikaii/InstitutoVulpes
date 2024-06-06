@@ -20,3 +20,26 @@
     color: var(--branco);
     transform: translateY(-0.125em);
 }
+.nav-button{
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-weight: 700;
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+}
+.nav-button:hover{
+    background: var(--azul-fundo-botao);
+}
+.send-button{
+    height: 35px;
+    width: 110px;
+    background-color: var(--azul-claro);
+    border: 0;
+    border-radius: 8px;
+    color: var(--branco);
+}
