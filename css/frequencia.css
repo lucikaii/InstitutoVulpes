@@ -1,7 +1,27 @@
 body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #fff;
     background-color: #015C91;
-    color: white;
-}
+  }
+  
+  .navbar {
+    background-color: #FF9E00;
+    color: #fff;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+  }
+  
+  .nav-link img {
+    margin-right: 8px;
+  }
 .btn-orange {
     background-color: orange;
     border-color: orange;

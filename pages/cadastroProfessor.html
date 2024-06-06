@@ -3,105 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro Professor</title>
+  <title>Instituto Vulpes | Professores</title>
+  <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2477/2477621.png" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="../css/professores.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="../js/listaProfessores.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <div class="container">
-    <a class="navbar-brand" href="#">Professor Vitor</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Relatórios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-users"></i> Alunos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-chalkboard-teacher"></i> Professores</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-users-class"></i> Turmas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-comments"></i> Chat</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../img/raposa_logo.png" alt="Logo Escola">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../img/grafico.png" alt="Relatórios" height="20"> Relatórios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../img/alunos.png" alt="Alunos" height="20"> Alunos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../img/professor.png" alt="Professores" height="20"> Professores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../img/turma.png" alt="Turmas" height="20"> Turmas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../img/chat-balao.png" alt="Chat" height="20"> Chat</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <div class="card bg-warning">
-        <div class="card-body">
-          <a href="#" class="btn btn-dark"> Disciplinas</a>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="professor-list" class="justify-content-center">
+         
         </div>
       </div>
     </div>
   </div>
-</div>
+  
+  <div class="fixed-bottom text-right mr-3 mb-3">
+    <button type="button" class="btn btn-warning rounded-pill" data-toggle="modal" data-target="#professorModal">Cadastrar Professor</button>
+  </div>
 
-
-<div class="fixed-bottom text-center mb-3">
-  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#professorModal">Cadastrar Professor</button>
-</div>
-
-
-<div class="modal fade" id="professorModal" tabindex="-1" role="dialog" aria-labelledby="professorModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="professorModalLabel">Cadastro de Professor</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome">
-          </div>
-          <div class="form-group">
-            <label for="formacao">Formação:</label>
-            <input type="text" class="form-control" id="formacao">
-          </div>
-          <div class="form-group">
-            <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" class="form-control" id="data_nascimento">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" class="form-control" id="telefone">
-          </div>
-          <div class="form-group">
-            <label for="disciplina">Disciplina:</label>
-            <input type="text" class="form-control" id="disciplina">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-warning">Salvar</button>
+  <div class="modal fade" id="professorModal" tabindex="-1" role="dialog" aria-labelledby="professorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-modal">
+        <div class="modal-header">
+          <h5 class="modal-title" id="professorModalLabel" style="color: #FF9E00;">Cadastro de Professor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nome" style="color: #FF9E00;">Nome:</label>
+              <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="form-group">
+              <label for="formacao" style="color: #FF9E00;">Formação:</label>
+              <input type="text" class="form-control" id="formacao">
+            </div>
+            <div class="form-group">
+              <label for="data_nascimento" style="color: #FF9E00;">Data de Nascimento:</label>
+              <input type="date" class="form-control" id="data_nascimento">
+            </div>
+            <div class="form-group">
+              <label for="email" style="color: #FF9E00;">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="telefone" style="color: #FF9E00;">Telefone:</label>
+              <input type="tel" class="form-control" id="telefone">
+            </div>
+            <div class="form-group">
+              <label for="disciplina" style="color: #FF9E00;">Disciplina:</label>
+              <input type="text" class="form-control" id="disciplina">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary rounded-button" data-dismiss="modal" style="background-color: #FF9E00; border-color: #FF9E00; color: #fff;">Fechar</button>
+          <button type="button" class="btn btn-warning rounded-button" style="background-color: #FF9E00; border-color: #FF9E00;">Salvar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>
+
+
