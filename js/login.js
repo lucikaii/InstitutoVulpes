@@ -11,7 +11,7 @@ async function loginValidation() {
 
     const getUsers = async () => {
 
-        const url = 'https://acmefilmes.onrender.com/v2/acmefilmes/usuarios/';
+        const url = 'https://vulpes-back.onrender.com/v1/Vulpes/Responsavel';
 
         try {
             const response = await fetch(url);
@@ -25,7 +25,7 @@ async function loginValidation() {
 
     const usuarios = await getUsers();
 
-    usuarios.usuario.forEach(function (user) {
+    usuarios.responsavel.forEach(function (user) {
 
         if(user.email === inputEmail && user.senha === inputPassword) {
             userStatus = true;
