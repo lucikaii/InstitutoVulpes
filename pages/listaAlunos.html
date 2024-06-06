@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Instituto Vulpes | Alunos </title>
-        <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2477/2477621.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/listaAlunos.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="../js/url/aluno.js"></script>
-        <script type="module" src="../js/listaAluno.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/raposa_logo.png" alt="Logo Escola">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../img/grafico.png" alt="Relatórios" height="20"> Relatórios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../img/alunos.png" alt="Alunos" height="20"> Alunos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../img/professor.png" alt="Professores" height="20"> Professores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../img/turma.png" alt="Turmas" height="20"> Turmas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../img/chat-balao.png" alt="Chat" height="20"> Chat</a>
-                        </li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Vulpes | Alunos</title>
+    <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2477/2477621.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/listaAlunos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/url/aluno.js"></script>
+    <script type="module" src="../js/listaAluno.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../img/raposa_logo.png" alt="Logo Escola">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../img/grafico.png" alt="Relatórios"
+                                height="20"> Relatórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../img/alunos.png" alt="Alunos"
+                                height="20"> Alunos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../img/professor.png" alt="Professores"
+                                height="20"> Professores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../img/turma.png" alt="Turmas"
+                                height="20"> Turmas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../img/chat-balao.png" alt="Chat"
+                                height="20"> Chat</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    
-        <div class="container table-container">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Alunos</th>
-                        <th>Matrícula</th>
-                        <th>Notas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- <tr>
-                        <td>Aluno 1</td>
-                        <td>123456</td>
-                    </tr> -->
-                    
-                </tbody>
-            </table>
         </div>
+    </nav>
 
-
+    <div class="nav-buttons">
+        <button>Selecionar Disciplina</button>
+        <button>Salvar</button>
+    </div>
     
+    <div class="container table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Alunos</th>
+                    <th>Matrícula</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aluno 1</td>
+                    <td>123456</td>
+                    <td><input type="number" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Aluno 2</td>
+                    <td>123457</td>
+                    <td><input type="number" class="form-control"></td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

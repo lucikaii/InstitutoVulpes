@@ -41,3 +41,26 @@ body {
     border-radius: 5px;
     margin-top: 20px;
 }
+.input-square {
+    width: 70px; 
+    height: 40px; 
+    text-align: center; 
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav-buttons button {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    background-color: #FF9E00;
+    border: 2px solid #FF9E00;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
