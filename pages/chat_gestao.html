@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2477/2477621.png" />
     <link rel="stylesheet" href="../css/root.css">
@@ -16,7 +17,7 @@
 </head>
 <body>
     <header>
-        <div class="icon-welcome-message">
+        <div class="logo-area">
             <img src="../img/raposa_logo.png" alt="logo">
             <div class="message-welcome">
                 <h1>Boas Vindas!</h1>
@@ -34,14 +35,36 @@
     <main>
         <nav>
             <input type="text" placeholder="Pesquisar por um nome..." class="search-user">
-            <div class="user-message"></div>
-            <div class="user-message"></div>
-            <div class="user-message"></div>
-            <div class="user-message"></div>
+            <div class="user-message">
+                <img src="../img/elizete.jpg" alt="pic">
+                <span>Elizete Almeida</span>
+            </div>
+            <div class="user-message">
+                <img src="../img/carlos.jpg" alt="pic">
+                <span>Carlos Wellington</span>
+
+            </div>
+            <div class="user-message">
+                <img src="../img/tais.jpg" alt="pic">
+                <span>Tais Simão</span>
+
+            </div>
+            <div class="user-message">
+                <img src="../img/valdemir.jpg" alt="pic">
+                <span>Valdemir de Sá</span>
+
+            </div>
         </nav>
         <div class="chat-side">
-            <div class="user-info"></div>
-            <div class="chat">
+            <div class="user-info">
+                <img src="../img/tais.jpg" alt="pic">
+                <div class="chat-name">
+                    <span>Tais Simão</span>
+                    <span>Responsável de: Maria Bolacheiro, 3°C</span>
+                </div>
+            </div>
+        
+            <section class="chat">
                 <div class="message-self">
                     <span>Hello World!</span>
                 </div>
@@ -57,8 +80,9 @@
                 <div class="message-other">
                     <span>No, it was just a joke between us, dont worry, no fake student here 😉</span>
                 </div>
-            </div>
-            <div class="keyboard">
+
+            </section>
+            <div class="chat-form">
                 <input type="text" class="message" placeholder="Escreva uma mensagem...">
                 <button class="send-button">Enviar</button>
             </div>

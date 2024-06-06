@@ -8,10 +8,11 @@ header{
     background-color: var(--azul-claro);
     display: flex;
 }
-.icon-welcome-message{
+.logo-area{
     display: flex;
+    align-items: center;
 }
-.icon-welcome-message img{
+.logo-area img{
     height: 50px;
     width: 50px;
 }
@@ -56,8 +57,25 @@ nav{
 .user-message{
     height: 60px;
     width: 100%;
-    background-color: burlywood;
-    border-bottom: 2px solid black;
+    display: flex;
+    padding: 0 10px 0 10px;
+    gap: 15px;
+}
+.user-message:hover{
+    background-color: var(--cinza);
+}
+.user-message img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    align-self: center;
+}
+.user-message span{
+    font-size: 14px;
+    font-family: var(--titulo);
+    font-weight: 600;
+    color: var(--azul-escuro);
+    align-self: center;
 }
 .chat-side{
     height: 100%;
@@ -67,7 +85,29 @@ nav{
 .user-info{
     height: 100px;
     width: 100%;
-    background-color: blanchedalmond;
+    display: flex;
+    padding: 0 0 0 30px;
+    align-items: center;
+    gap: 15px;
+}
+.user-info img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.chat-name{
+    display: grid;
+}
+.chat-name span:first-child{
+    font-size: 16px;
+    font-family: var(--titulo);
+    font-weight: 900;
+}
+.chat-name span:last-child{
+    font-size: 12px;
+    font-family: var(--titulo);
+    font-weight: 900;
+    color: var(--cinza-escuro);
 }
 .chat{
     height: 100%;
@@ -77,7 +117,7 @@ nav{
     flex-grow: 1;
     flex-direction: column;
 }
-.keyboard{
+.chat-form{
     height: 70px;
     width: 100%;
     bottom: 0;
@@ -86,6 +126,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 20px;
+    background-color: var(--branco);
 }
 .message{
     height: 35px;
@@ -99,23 +140,21 @@ nav{
 
 /* CHAT */
 
+.chat > div{
+    padding: 10px;
+    max-width: 300px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
 .message-self{
     background-color: var(--azul-claro);
     color: var(--branco);
     border-radius: 16px 16px 0 16px;
-    padding: 10px;
-    max-width: 300px;
     align-self: flex-end;
-    line-height: 22px;
-    margin-bottom: 15px;
 }
 .message-other{
     background-color: var(--cinza-medio);
     color: var(--azul-escuro);
     border-radius: 0 16px 16px 16px;
-    padding: 10px;
-    max-width: 300px;
     align-self: flex-start;
-    line-height: 22px;
-    margin-bottom: 15px;
 }
