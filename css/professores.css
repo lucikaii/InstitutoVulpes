@@ -1,0 +1,40 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #FF9E00;
+  color: #fff;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link img {
+  margin-right: 8px;
+}
+
+.professor-card {
+  border-radius: 15px;
+}
+
+.rounded-button {
+  border-radius: 15px;
+}
+
+.rounded-modal {
+  border-radius: 15px;
+}
+
+.modal-title {
+  color: #FF9E00;
+}
+

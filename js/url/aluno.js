@@ -1,11 +1,12 @@
 'use strict'
 
-export async function getAlunos(){
+export async function getAlunos() {
     const url = 'https://vulpes-back.onrender.com/v1/Vulpes/Alunos'
-    const respose = await fetch(url)
-    const data = await respose.json()
+    const response = await fetch(url)
+    const data = await response.json()
     return data.alunos
 }
+
 
 export async function getAlunosId(id){
     const url = `https://vulpes-back.onrender.com/v1/Vulpes/Alunos/${id}`
