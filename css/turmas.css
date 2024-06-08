@@ -1,0 +1,83 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: var(--azul-claro);
+    display: flex;
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-area img{
+    height: 50px;
+    width: 50px;
+}
+.message-welcome{
+    display: grid;
+}
+.message-welcome > span:first-child{
+    font-size: 12px;
+    font-family: var(--texto);
+    font-weight: 600;
+    color: var(--branco);
+}
+.message-welcome > span:last-child{
+    font-size: 16px;
+    font-family: var(--titulo);
+    font-weight: 900;
+    color: var(--laranja);
+}
+.button-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 175px 20px 30px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+.class-box{
+    height: 110px;
+    width: 45%;
+    background-color: var(--azul-claro);
+    display: grid;
+    padding: 25px 30px 25px 30px;
+}
+.row{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.class-info{
+    display: flex;
+    gap: 10px;
+}
+.class-info span:first-child{
+    font-size: 20px;
+    font-family: var(--titulo);
+    color: var(--branco);
+    font-weight: 700;
+}
+.class-info span:last-child{
+    font-size: 20px;
+    font-family: var(--titulo);
+    color: var(--laranja);
+    font-weight: 700;
+}

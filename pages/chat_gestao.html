@@ -14,14 +14,16 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/chat_gestao.css">
     <link rel="stylesheet" href="../css/botao.css">
+    <!-- SCRIPTS -->
+    <script type="module" src="../js/chat_gestao.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-area">
             <img src="../img/raposa_logo.png" alt="logo">
             <div class="message-welcome">
-                <h1>Boas Vindas!</h1>
-                <span class="user-name">Luana Magalhães</span>
+                <span>Boas Vindas!</span>
+                <span>Luana Magalhães</span>
             </div>
         </div>
         <div class="button-side">
@@ -30,6 +32,7 @@
             <button class="nav-button"><img src="../img/turma.png" alt="turma"> Turmas</button>
             <button class="nav-button"><img src="../img/chat-balao.png" alt="chat"> Chat</button>
             <button class="nav-button"><img src="../img/professor.png" alt="professor"> Professores</button>
+
         </div>
     </header>
     <main>
@@ -64,27 +67,18 @@
                 </div>
             </div>
         
-            <section class="chat">
-                <div class="message-self">
+            <section class="chat" id="chat-body">
+                <!-- <div class="message-self">
                     <span>Hello World!</span>
-                </div>
+                </div> -->
                 <div class="message-other">
                     <span>Hello Mars!</span>
-                </div>
-                <div class="message-other">
-                    <span>Its a pleasure to receive you at this house</span>
-                </div>
-                <div class="message-self">
-                    <span>I have a doubt, you teachers were talking about the registration of fake students at this school? But how did it happened?</span>
-                </div>
-                <div class="message-other">
-                    <span>No, it was just a joke between us, dont worry, no fake student here 😉</span>
                 </div>
 
             </section>
             <div class="chat-form">
-                <input type="text" class="message" placeholder="Escreva uma mensagem...">
-                <button class="send-button">Enviar</button>
+                <input type="text" class="message" placeholder="Escreva uma mensagem..." id="messageInput">
+                <button class="send-button" id="send-message-button">Enviar</button>
             </div>
         </div>
     </main>
