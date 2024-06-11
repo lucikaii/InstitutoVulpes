@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/botao.css">
     <link rel="stylesheet" href="../css/turmas.css">
+    <script type="module" src="../js/turmas_gestao.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,6 +34,35 @@
             <button class="nav-button"><img src="../img/professor.png" alt="professor"> Professores</button>
             <button class="new-class-button">Nova Turma</button>
         </div>
+        
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-title">Criar Nova Turma</h2>
+            <hr>
+            <h3>Turma:</h3>
+            <h3>Ano letivo:</h3>
+            <h3>Quantidade de alunos:</h3>
+            <h3>Modalidade:</h3>
+            <h3>Professor responsável:</h3>
+            <table class="alunos-table">
+              <thead>
+                <tr>
+                  <th>Nome Completo</th>
+                  <th>N° Chamada</th>
+                  <th>N° Matrícula</th>
+                  <th>Dia do Nascimento</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        
+          
     </header>
     <main>
         <!-- div 1 -->

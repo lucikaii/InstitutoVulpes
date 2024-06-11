@@ -28,13 +28,37 @@
             </div>
         </div>
         <div class="button-side">
-            <button class="nav-button"><a href="#"></a><img src="../img/grafico.png" alt="grafico"> Relatórios</button>
-            <button class="nav-button"><a href="../pages/alunos.html"></a><img src="../img/alunos.png" alt="aluno"> Alunos</button>
-            <button class="nav-button"><a href="../pages/turmas.html"></a><img src="../img/turma.png" alt="turma"> Turmas</button>
-            <button class="nav-button"><a href="../pages/chat_gestao.html"></a><img src="../img/chat-balao.png" alt="chat"> Chat</button>
+            <button class="nav-button"><img src="../img/grafico.png" alt="grafico"> Relatórios</button>
+            <button class="nav-button"><img src="../img/alunos.png" alt="aluno"> Alunos</button>
+            <button class="nav-button"><img src="../img/turma.png" alt="turma"> Turmas</button>
+            <button class="nav-button"><img src="../img/chat-balao.png" alt="chat"> Chat</button>
             <button class="nav-button"><img src="../img/professor.png" alt="professor"> Professores</button>
-            <button class="new-class-button">Cadastrar Aluno</button>
+            <button class="new-class-button">Nova Turma</button>
         </div>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 class="modal-title">Nova Turma</h2>
+              <select id="turma">
+                <option value="">Turma</option>
+                
+              </select>
+              <select id="ano">
+                <option value="">Ano da Turma</option>
+                
+              </select>
+              <select id="professor">
+                <option value="">Professor</option>
+                
+              </select>
+              <select id="modalidade">
+                <option value="">Modalidade</option>
+                
+              </select>
+              <button id="criarTurma">Adicionar aluno</button>
+            </div>
+          </div>
     </header>
     <main>
         <div class="student-box">
