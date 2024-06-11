@@ -1,7 +1,7 @@
 'use strict'
 
 export async function getComunicados(){
-    const url = 'https://vulpes-back.onrender.com/v1/Vulpes/Comunicado'
+    const url = 'https://vulpes-back.onrender.com/v1/Vulpes/Nota'
     const respose = await fetch(url)
     const data = await respose.json()
     return data.comunicado

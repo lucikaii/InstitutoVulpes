@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2477/2477621.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <script type="module" src="../js/home.js" defer></script>
+    <script type="module" src="../js/avisos.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="logo-area">
@@ -27,10 +31,10 @@
         </div>
         <div class="content-area">
             <ul class="navbar">
-                <a href="./home.html" >Home</a>
-                <a href="./comunicado.html" >Comunicados</a>
-                <a href="./boletim.html" >Boletim</a>
-                <a href="#" >Perfil</a>
+                <a href="./home.html">Home</a>
+                <a href="./comunicado.html">Comunicados</a>
+                <a href="./boletim.html">Boletim</a>
+                <a href="#">Perfil</a>
             </ul>
             <a href="./chat.html"><button class="botao">Contate-nos</button></a>
         </div>
@@ -46,19 +50,12 @@
     </div>
     <div class="container mt-5">
         <p class="quadro text-center">Quadro de Avisos</p>
-        <div class="comunicado">
-            <div class="comunicado-body">
-                <h5 class="comunicado-title">Passeio para o Aquário de São Paulo!</h5>
-                <p>É com grande entusiasmo que informamos sobre o próximo passeio escolar de nossos alunos ao Aquário de São Paulo! Este passeio promete ser uma experiência educativa e emocionante para nossos estudantes, proporcionando-lhes a oportunidade de explorar e aprender sobre a vida marinha de forma interativa e divertida.</p>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" id="visto-checkbox" onchange="toggleCheckbox(this)">
-                <label for="visto-checkbox">Não Visto</label>
-            </div>
-            <div class="date-box">
-                05/06/2024
-            </div>
-        </div>
+
+        <div class="comunicados" id="comunicados-id"></div>
+    </div>
+
+
     </div>
 </body>
+
 </html>
