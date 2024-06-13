@@ -1,39 +1,58 @@
-'use strict'
+'use strict';
 
 const btnLogin = document.getElementById('btn');
 
 async function loginValidation() {
-   
     const inputEmail = document.getElementById('email').value;
     const inputPassword = document.getElementById('senha').value;
+    let userStatus = false;
 
-    let userStatus = false; 
-
-    const getUsers = async () => {
-
-        const url = 'https://vulpes-back.onrender.com/v1/Vulpes/Responsavel';
-
+    const fetchData = async (url) => {
         try {
             const response = await fetch(url);
-            const usuarios = await response.json();
-            return usuarios;
+            return await response.json();
         } catch (error) {
             alert('Houve um problema com a solicitação de login.');
             return null;
         }
     };
 
-    const usuarios = await getUsers();
+    const responsavel = await fetchData('https://vulpes-back.onrender.com/v1/Vulpes/Responsavel');
+    const gestao = await fetchData('https://vulpes-back.onrender.com/v1/Vulpes/Gestao');
+    const professor = await fetchData('https://vulpes-back.onrender.com/v1/Vulpes/Professor');
 
-    usuarios.responsavel.forEach(function (user) {
+    if (responsavel && responsavel.responsavel) {
+        for (let user of responsavel.responsavel) {
+            if (user.email === inputEmail && user.senha === inputPassword) {
+                userStatus = true;
+                localStorage.setItem('userId', user.id);
+                window.location.href = '../pages/chat.html';
+                return;
+            }
+        }
+    }
 
-        if(user.email === inputEmail && user.senha === inputPassword) {
-            userStatus = true;
-            localStorage.setItem('userId', user.id)
-            window.location.href = '../pages/chat.html';
-            return;
-        } 
-    });
+    if (gestao && gestao.gestao) {
+        for (let user of gestao.gestao) {
+            if (user.email === inputEmail && user.senha === inputPassword) {
+                userStatus = true;
+                localStorage.setItem('userId', user.id);
+                window.location.href = '../pages/turmas.html';
+                return;
+            }
+        }
+    }
+
+    if (professor && professor.professor) {
+        for (let user of professor.professor) {
+            if (user.email === inputEmail && user.numero_matricula === inputPassword) {
+                userStatus = true;
+                localStorage.setItem('userId', user.id);
+                window.location.href = '../pages/frequencia.html';
+                return;
+            }
+        }
+    }
 
     if (!userStatus) {
         alert('Credenciais inválidas. Tente novamente.');
